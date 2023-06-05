@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: "Rubik";
+      src: url("./assets/fonts/Rubik-VariableFont_wght.ttf");
+    }
+  </style>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+<body>
+
+<main class="main">
+  <h1>IP Address Tracker</h1>
+  <form action="/" method="post">
+    <input type="text" id="input_ip" placeholder="Search for any IP address or domain">
+    <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+  </form>
+  <section class="section_data">
+    <article class="ip_address">
+      <div>IP Address</div>
+    </article>
+    <article class="location">
+      <div>Location</div>
+    </article>
+    <article class="timezone">
+      <div>Timezone</div>
+    </article>
+    <article class="isp">
+      <div>ISP</div>
+    </article>
+  </section>
+</main>
+<div id="map"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="www.aliferdows.ir">Ali Duzandeh Ferdows</a>.
+  </div>
+<script type="application/javascript" src="./assets/js/main.js"></script>
+
+</body>
+</html>

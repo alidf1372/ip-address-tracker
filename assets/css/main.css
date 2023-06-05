@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+.main {
+    background: url("../../images/pattern-bg-desktop.png") no-repeat top;
+    width: 100%;
+    position: relative;
+}
+#map {
+    height: calc(100vh + 50px);
+}
+.main h1 {
+    font: 28px/40px "Rubik";
+    font-weight: 500;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+.main form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 115px;
+}
+.main input {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 13px 0 0 13px;
+    padding: 20px;
+    outline: none;
+    width: 450px;
+}
+.main button {
+    background-color:  hsl(0, 0%, 17%);
+    border: none;
+    border-radius: 0 13px 13px 0;
+    padding: 0 25px;
+    cursor: pointer;
+}
+.section_data {
+    background-color: #ffffff;
+    width: 85%;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Rubik";
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+.section_data article {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+.section_data article::after {
+    content: "";
+    width: 1px;
+    height: 75px;
+    background-color: hsl(0, 0%, 59%);
+    display: block;
+    position: absolute;
+    top: calc(50% - 35px);
+    right: 0;
+}
+.section_data article:last-child::after {
+    content: none;
+}
+.section_data div:first-child {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    font-weight: 500;
+}
+.section_data article > div {
+    line-height: 50px;
+}
+.leaflet-top, .leaflet-bottom {
+    z-index: 10001;
+}
+@media only screen and (max-width: 700px) {
+    .section_data {
+        width: 80%;
+        flex-direction: column;
+        bottom: unset;
+        top: 194px;
+        padding: 10px;
+    }
+    .section_data article::after {
+        content: none;
+    }
+    .section_data article {
+        min-height: 50px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .main {
+        background: url("../../images/pattern-bg-mobile.png") no-repeat top;
+    }
+}
